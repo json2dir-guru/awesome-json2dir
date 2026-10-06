@@ -1,0 +1,6 @@
+# Awesome list entries are single long lines by convention.
+MD013: false
+# Centered header and footer need inline HTML.
+MD033: false
+# The H1 sits inside the centered header block.
+MD041: false
