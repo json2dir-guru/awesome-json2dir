@@ -20,6 +20,8 @@ PAGES = [
      "The specification of the json2dir format: conversion scheme, processing model and security rules."),
     ("conformance/README.md", "conformance.html", "conformance", "json2dir Conformance Suite",
      "A language-agnostic test suite for json2dir implementations."),
+    ("results/README.md", "results.html", "results", "json2dir Test Results",
+     "Every buildable json2dir implementation run against the same black-box cases."),
     ("MANIFESTO.md", "manifesto.html", "manifesto", "The json2dir Manifesto",
      "A tree is a value. Write it down."),
     ("CONTRIBUTING.md", "contributing.html", "contributing", "Contributing to awesome-json2dir",
@@ -55,6 +57,8 @@ def main() -> int:
         build_page(source, out / name, page, title, description)
         print(f"{source} -> {out / name}")
     shutil.copyfile(SITE / "style.css", out / "style.css")
+    shutil.copyfile(SITE / "results.js", out / "results.js")
+    shutil.copyfile(ROOT / "results" / "results.json", out / "results.json")
     (out / ".nojekyll").touch()
     return 0
 

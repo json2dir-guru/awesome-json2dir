@@ -395,6 +395,128 @@ div[align="center"] {
   color: var(--text);
 }
 
+/* Results page */
+
+.page-results .content {
+  max-width: 1040px;
+}
+
+.r-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.r-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.r-filters select {
+  max-width: 15rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.r-summary,
+.r-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.r-table th[data-sort] {
+  cursor: pointer;
+  user-select: none;
+}
+
+.r-table th[aria-sort] {
+  color: var(--accent);
+}
+
+.r-row {
+  cursor: pointer;
+}
+
+.r-row:hover td {
+  background: var(--bg-soft);
+}
+
+.r-name {
+  display: block;
+  font-weight: 600;
+}
+
+.r-tags {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.r-partial {
+  padding: 0 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.r-num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.r-bad {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.r-score {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 11rem;
+}
+
+.r-bar {
+  flex: 1;
+  height: 0.5rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--bg-soft);
+}
+
+.r-bar i {
+  display: block;
+  height: 100%;
+  background: var(--accent-2);
+}
+
+.r-failures td {
+  background: var(--bg-soft);
+  font-size: 0.85rem;
+}
+
+.r-failures ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.r-failures li {
+  margin: 0.4rem 0;
+  overflow-wrap: anywhere;
+}
+
 /* Manifesto page */
 
 .page-manifesto .content {
