@@ -10,6 +10,7 @@ local pages = {
   ["spec/rfc-json2dir.md"] = "rfc.html",
   ["MANIFESTO.md"] = "manifesto.html",
   ["conformance/README.md"] = "conformance.html",
+  ["results/README.md"] = "results.html",
   ["CONTRIBUTING.md"] = "contributing.html",
 }
 
